@@ -323,16 +323,17 @@
 
       <section class="contact" id="contact">
         <div class="contact-intro reveal"><p class="section-index">07 / CONTACT</p><h2>현재 운영 중인 업체와 필요한 업무를 알려주세요.</h2><p>무엇을 맡겨야 할지 아직 정하지 못하셨다면 지금 가장 불편한 점만 적어주셔도 됩니다.<br>확인한 뒤 진행할 수 있는 업무와 비용을 안내드립니다.</p><small>확인 후 카카오톡, 전화 또는 이메일로 연락드립니다.</small><a class="button contact-download" href="./assets/hyeom-company-profile.pdf" download="혜옴 회사 소개서.pdf">회사소개서 PDF 다운로드 <span>↓</span></a></div>
-        <form class="contact-form reveal" id="contact-form">
-          <label>업체명<input type="text" name="company" placeholder="업체명을 입력해주세요" /></label>
-          <label>업종<input type="text" name="industry" placeholder="예: 음식점, 행사, 뷰티" /></label>
-          <label class="full">현재 운영 중인 SNS 또는 홈페이지<input type="url" name="website" placeholder="주소를 입력해주세요" /></label>
-          <label>필요한 시장<select name="market"><option value="">선택해주세요</option><option>한국</option><option>필리핀</option><option>한국·필리핀 모두</option><option>잘 모르겠습니다</option></select></label>
-          <label>필요한 업무<select name="service"><option value="">선택해주세요</option><option>네이버 마케팅</option><option>Instagram·Meta</option><option>YouTube</option><option>온라인 홍보</option><option>통합 운영</option><option>잘 모르겠습니다</option></select></label>
-          <label class="full">연락처 또는 카카오톡 ID<input type="text" name="contact" placeholder="연락 가능한 정보를 입력해주세요" /></label>
-          <label class="full">문의 내용<textarea name="message" rows="5" placeholder="필요한 업무와 현재 고민을 자유롭게 적어주세요"></textarea></label>
-          <button class="submit-button" type="submit">상담 신청하기 <span>→</span></button>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/xbgggbae" method="POST">
+          <label>업체명<input type="text" name="company" placeholder="업체명을 입력해주세요" data-fs-field required /></label>
+          <label>업종<input type="text" name="industry" placeholder="예: 음식점, 행사, 뷰티" data-fs-field /></label>
+          <label class="full">현재 운영 중인 SNS 또는 홈페이지<input type="url" name="website" placeholder="주소를 입력해주세요" data-fs-field /></label>
+          <label>필요한 시장<select name="market" data-fs-field><option value="">선택해주세요</option><option>한국</option><option>필리핀</option><option>한국·필리핀 모두</option><option>잘 모르겠습니다</option></select></label>
+          <label>필요한 업무<select name="service" data-fs-field><option value="">선택해주세요</option><option>네이버 마케팅</option><option>Instagram·Meta</option><option>YouTube</option><option>온라인 홍보</option><option>통합 운영</option><option>잘 모르겠습니다</option></select></label>
+          <label class="full">연락처 또는 카카오톡 ID<input type="text" name="contact" placeholder="연락 가능한 정보를 입력해주세요" data-fs-field required /></label>
+          <label class="full">문의 내용<textarea name="message" rows="5" placeholder="필요한 업무와 현재 고민을 자유롭게 적어주세요" data-fs-field required></textarea></label>
+          <button class="submit-button" type="submit" data-fs-submit-btn>상담 신청하기 <span>→</span></button>
+          <p class="form-status" data-fs-success role="status" aria-live="polite">상담 신청이 접수되었습니다. 확인 후 연락드리겠습니다.</p>
+          <p class="form-status" data-fs-error role="alert">접수 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요.</p>
         </form>
       </section>
     </main>
@@ -347,5 +348,10 @@
       <button class="modal-close" type="button" aria-label="상세 내용 닫기">×</button>
       <p class="modal-index">SELECTED WORK</p><h2 id="modal-title"></h2><p id="modal-description"></p><div id="modal-list"></div>
     </dialog>
+    <script>
+      window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+      formspree('initForm', { formElement: '#contact-form', formId: 'xbgggbae' });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
   </body>
 </html>

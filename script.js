@@ -115,13 +115,6 @@ modal?.addEventListener('click', (event) => {
   if (event.target === modal) modal.close();
 });
 
-const form = document.querySelector('#contact-form');
-const formStatus = document.querySelector('#form-status');
-form?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  formStatus.textContent = '현재 상담 접수 채널을 연결하고 있습니다. 연락 채널이 확정되면 이 폼에서 바로 접수할 수 있습니다.';
-});
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
