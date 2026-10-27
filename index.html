@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#3d54f6" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <meta
+      name="description"
+      content="한국의 소상공인·행사·브랜드와 필리핀 현지 사업자를 위한 온라인 마케팅 서비스, 혜옴"
+    />
+    <title>HYEOM | 한국과 필리핀을 잇는 마케팅</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 바로가기</a>
+
+    <header class="site-header" id="site-header">
+      <a class="brand" href="#top" aria-label="혜옴 홈페이지 맨 위로">HYEOM<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span><span class="sr-only">메뉴 열기</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="주요 메뉴">
+        <a href="#work">포트폴리오</a>
+        <a href="#services">서비스</a>
+        <a href="#price">가격</a>
+        <a href="#process">진행 과정</a>
+        <a href="#about">혜옴 소개</a>
+      </nav>
+      <a class="header-cta" href="#contact">상담하기</a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><i></i>KOREA × PHILIPPINES MARKETING</p>
+          <h1>한국과 필리핀을 잇는 마케팅.</h1>
+          <p class="hero-description">
+            소상공인, 행사, 브랜드부터 필리핀 현지 사업자까지 필요한 채널과 업무를 선택해 시작할 수 있습니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#services" data-market-target="korea">한국 서비스·가격 보기 <span>↗</span></a>
+            <a class="button button-outline" href="#services" data-market-target="philippines">필리핀 서비스·가격 보기 <span>↗</span></a>
+            <a class="button button-download" href="./assets/hyeom-company-profile.pdf" download="혜옴 회사 소개서.pdf">회사소개서 PDF <span>↓</span></a>
+          </div>
+          <a class="text-link" href="#contact">상담하기 <span>→</span></a>
+        </div>
+
+        <div class="hero-art reveal" aria-label="한국과 필리핀을 연결하는 혜옴의 마케팅 네트워크를 표현한 그래픽">
+          <div class="art-meta"><span>HYEOM / SEOUL</span><span>2026</span></div>
+          <div class="orbit orbit-1"></div>
+          <div class="orbit orbit-2"></div>
+          <div class="orbit orbit-3"></div>
+          <div class="orbit-line orbit-line-x"></div>
+          <div class="orbit-line orbit-line-y"></div>
+          <div class="route route-left"><b>KR</b><small>SEOUL</small></div>
+          <div class="route route-right"><b>PH</b><small>PHILIPPINES</small></div>
+          <div class="art-mark">H</div>
+          <div class="art-bottom"><span>CONTENT</span><span>MEDIA</span><span>LOCAL PR</span></div>
+        </div>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div>
+          <span>NAVER MARKETING</span><i>●</i><span>SOCIAL MEDIA</span><i>●</i><span>META ADS</span><i>●</i><span>YOUTUBE</span><i>●</i><span>LOCAL PR</span><i>●</i><span>NAVER MARKETING</span><i>●</i><span>SOCIAL MEDIA</span><i>●</i><span>META ADS</span><i>●</i><span>YOUTUBE</span><i>●</i><span>LOCAL PR</span>
+        </div>
+      </div>
+
+      <section class="section section-dark work" id="work">
+        <div class="section-heading light reveal">
+          <p class="section-index">01 / WORK</p>
+          <div>
+            <h2>이런 업무를 진행했습니다.</h2>
+            <p>프로젝트의 성격과 발주 관계를 고려해 일부 업체명과 화면은 가려서 공개합니다.</p>
+          </div>
+        </div>
+
+        <div class="filter-tabs" role="group" aria-label="포트폴리오 지역 필터">
+          <button class="filter-tab is-active" type="button" data-filter="all">ALL</button>
+          <button class="filter-tab" type="button" data-filter="korea">KOREA</button>
+          <button class="filter-tab" type="button" data-filter="philippines">PHILIPPINES</button>
+        </div>
+
+        <div class="work-grid">
+          <article class="case-card reveal" data-region="korea">
+            <div class="case-visual has-photo photo-try-everything">
+              <img src="./assets/portfolio/try-everything.jpg" alt="Try Everything 행사장 전경" decoding="async" />
+              <span>CASE 01</span><small>KOREA</small>
+            </div>
+            <div class="case-copy">
+              <p class="case-number">CASE 01 · KOREA</p>
+              <h3>Try Everything</h3>
+              <p>글로벌 스타트업 행사의 온라인 마케팅과 채널 운영을 진행했습니다.</p>
+              <ul><li>행사 온라인 마케팅</li><li>SNS 채널 운영</li><li>광고 운영</li><li>게스트·인플루언서 섭외</li></ul>
+              <button class="case-button" type="button" data-case="tryEverything">자세히 보기 <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="case-card reveal" data-region="korea">
+            <div class="case-visual has-photo photo-seoul-design">
+              <img src="./assets/portfolio/seoul-design-award.jpg" alt="서울디자인어워드 행사장 전경" decoding="async" />
+              <span>CASE 02</span><small>KOREA</small>
+            </div>
+            <div class="case-copy">
+              <p class="case-number">CASE 02 · KOREA</p>
+              <h3>서울디자인어워드</h3>
+              <p>서울디자인어워드의 온라인 마케팅과 채널 운영을 진행했습니다.</p>
+              <ul><li>행사 온라인 마케팅</li><li>SNS 채널 운영</li><li>광고 운영</li><li>게스트·인플루언서 섭외</li></ul>
+              <button class="case-button" type="button" data-case="seoulDesign">자세히 보기 <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="case-card reveal" data-region="korea">
+            <div class="case-visual has-photo photo-children-event">
+              <img src="./assets/portfolio/children-design-event.jpg" alt="어린이 디자인 행사 현장" decoding="async" />
+              <span>CASE 03</span><small>KOREA</small>
+            </div>
+            <div class="case-copy">
+              <p class="case-number">CASE 03 · KOREA</p>
+              <h3>서울 어린이 디자인 행사</h3>
+              <p>행사 일정에 맞춰 온라인 홍보 전반을 담당했습니다.</p>
+              <ul><li>인스타그램 채널 및 피드 관리</li><li>스폰서 광고 운영</li><li>맘카페 섭외 및 광고 제안</li><li>온라인 커뮤니티 배포</li></ul>
+              <button class="case-button" type="button" data-case="event">자세히 보기 <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="case-card reveal" data-region="korea">
+            <div class="case-visual has-photo photo-startup-summit">
+              <img src="./assets/portfolio/gyeonggi-startup-summit.jpg" alt="경기스타트업서밋 행사장 전경" decoding="async" />
+              <span>CASE 04</span><small>KOREA</small>
+            </div>
+            <div class="case-copy">
+              <p class="case-number">CASE 04 · KOREA</p>
+              <h3>경기스타트업서밋</h3>
+              <p>행사의 온라인 마케팅과 채널 운영을 담당했습니다.</p>
+              <ul><li>행사 온라인 마케팅</li><li>SNS 채널 운영</li><li>광고 운영</li><li>게스트·인플루언서 섭외</li></ul>
+              <button class="case-button" type="button" data-case="startup">자세히 보기 <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="case-card reveal" data-region="korea">
+            <div class="case-visual case-visual-c">
+              <span>CASE 05</span><strong>PRIVATE<br />PREVIEW</strong><small>KOREA</small>
+            </div>
+            <div class="case-copy">
+              <p class="case-number">CASE 05 · KOREA</p>
+              <h3>국내 1인 피부관리업체 A</h3>
+              <p>인스타그램 운영과 외부 홍보를 함께 진행하고 있습니다.</p>
+              <ul><li>인스타그램 콘텐츠 제작</li><li>체험단 운영</li><li>언론기사 작성 및 송출</li><li>스폰서 광고 준비</li></ul>
+              <button class="case-button" type="button" data-case="beauty">자세히 보기 <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="case-card reveal" data-region="korea">
+            <div class="case-visual case-visual-e">
+              <span>CASE 06</span><strong>PRIVATE<br />PREVIEW</strong><small>KOREA</small>
+            </div>
+            <div class="case-copy">
+              <p class="case-number">CASE 06 · KOREA</p>
+              <h3>DDP 디자인위크</h3>
+              <p>행사 일정에 맞춰 온라인 마케팅과 SNS 운영을 진행했습니다.</p>
+              <ul><li>행사 온라인 마케팅</li><li>SNS 채널 운영</li><li>광고 운영</li><li>게스트·인플루언서 섭외</li></ul>
+              <button class="case-button" type="button" data-case="ddp">자세히 보기 <span>↗</span></button>
+            </div>
+          </article>
+
+          <article class="case-card reveal" data-region="philippines">
+            <div class="case-visual case-visual-a">
+              <span>CASE 07</span><strong>PRIVATE<br />PREVIEW</strong><small>PHILIPPINES</small>
+            </div>
+            <div class="case-copy">
+              <p class="case-number">CASE 07 · PHILIPPINES</p>
+              <h3>필리핀 한인 마사지·스파 A</h3>
+              <p>인스타그램 피드 제작과 스폰서 광고를 맡아 운영하고 있습니다.</p>
+              <ul><li>인스타그램 피드 기획·제작</li><li>게시물 문구 작성</li><li>Meta 스폰서 광고 운영</li><li>광고 결과 확인</li></ul>
+              <button class="case-button" type="button" data-case="spa">자세히 보기 <span>↗</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-heading reveal">
+          <p class="section-index">02 / SERVICE</p>
+          <div>
+            <h2>필요한 시장과 업무를 선택하세요.</h2>
+            <p>한국과 필리핀 중 필요한 시장을 선택하면 지역에 맞는 경험과 서비스를 확인할 수 있습니다.</p>
+          </div>
+        </div>
+
+        <div class="market-switch" role="tablist" aria-label="서비스 지역 선택" data-tab-group="services">
+          <button class="market-tab is-active" type="button" role="tab" aria-selected="true" data-tab="korea"><span>01</span>KOREA<small>한국 서비스</small></button>
+          <button class="market-tab" type="button" role="tab" aria-selected="false" data-tab="philippines"><span>02</span>PHILIPPINES<small>필리핀 서비스</small></button>
+        </div>
+
+        <div class="market-panel is-active" role="tabpanel" data-panel-group="services" data-panel="korea">
+          <div class="experience-block experience-korea reveal">
+            <div class="experience-mark">K</div>
+            <div class="experience-copy">
+              <p class="section-index">KOREA EXPERIENCE</p>
+              <h3>대기업 출신 마케터가 직접 진행합니다.</h3>
+              <p>대기업과 다양한 행사·브랜드 프로젝트에서 쌓은 실무 경험을 바탕으로 소상공인, 행사, 브랜드에 필요한 온라인 마케팅을 진행합니다.</p>
+              <p>업종과 예산을 확인한 뒤 네이버, 인스타그램, Meta 광고, YouTube 중 필요한 채널과 업무만 구성합니다.</p>
+            </div>
+          </div>
+
+          <div class="accordion-list reveal">
+            <details open>
+              <summary><span>01</span><b>네이버 마케팅</b><em>NAVER</em><i>+</i></summary>
+              <div class="accordion-content">
+                <p>검색부터 방문과 후기까지, 고객이 업체를 발견하고 신뢰하는 과정을 관리합니다.</p>
+                <ul><li>네이버 플레이스 관리</li><li>네이버 블로그·체험단 섭외</li><li>맘카페 홍보 및 섭외</li><li>고객 리뷰 관리·후기 운영</li><li>네이버 GFA 광고</li><li>네이버 검색광고</li></ul>
+              </div>
+            </details>
+            <details>
+              <summary><span>02</span><b>Meta·Instagram</b><em>SOCIAL</em><i>+</i></summary>
+              <div class="accordion-content">
+                <p>브랜드의 분위기를 보여주는 콘텐츠부터 문의를 만드는 광고까지 함께 운영합니다.</p>
+                <ul><li>인스타그램 채널 운영</li><li>콘텐츠 기획 및 디자인</li><li>게시물 문구 작성</li><li>릴스 기획·편집</li><li>Meta 광고 계정 및 캠페인 세팅</li><li>Instagram·Facebook 광고 운영</li></ul>
+              </div>
+            </details>
+            <details>
+              <summary><span>03</span><b>YouTube</b><em>VIDEO</em><i>+</i></summary>
+              <div class="accordion-content">
+                <p>전문 PD 파트너와 협업해 광고와 채널 운영, 영상 제작을 진행할 수 있습니다.</p>
+                <ul><li>YouTube 광고 세팅 및 운영</li><li>YouTube 채널 운영</li><li>영상 콘텐츠 기획</li><li>촬영·편집 대행</li><li>행사 및 브랜드 영상 제작</li></ul>
+              </div>
+            </details>
+            <details>
+              <summary><span>04</span><b>행사·통합 마케팅</b><em>CAMPAIGN</em><i>+</i></summary>
+              <div class="accordion-content">
+                <p>행사 전 홍보부터 진행 기간의 채널 운영과 광고, 행사 후 결과 정리까지 구성합니다.</p>
+                <ul><li>행사 온라인 홍보</li><li>행사 SNS 채널 운영</li><li>체험단·커뮤니티 섭외</li><li>인플루언서 섭외</li><li>광고소재 제작</li><li>홍보 일정 및 채널 기획</li></ul>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="market-panel" role="tabpanel" data-panel-group="services" data-panel="philippines" hidden>
+          <div class="experience-block experience-philippines reveal">
+            <div class="years"><span>CEBU<br />EXPERIENCE</span><strong>15</strong><small>YEARS</small></div>
+            <div class="experience-copy">
+              <p class="section-index">PHILIPPINES LOCAL EXPERIENCE</p>
+              <h3>필리핀 현지를 이해하는 담당자가 직접 진행합니다.</h3>
+              <p>혜옴 대표는 세부에서 약 15년간 생활하며 가이드, 통역, 마케팅 관련 업무를 경험했습니다.</p>
+              <p>필리핀에서 사업하는 업체의 위치와 고객, 현재 운영 중인 채널을 확인한 뒤 콘텐츠와 광고를 준비합니다.</p>
+            </div>
+          </div>
+
+          <div class="service-grid reveal">
+            <article><span>01</span><h3>콘텐츠·광고소재 제작</h3><p>업체에서 보내주신 사진과 영상을 바탕으로 피드, 카드뉴스, 광고 이미지와 문구를 제작합니다.</p></article>
+            <article><span>02</span><h3>SNS 채널 운영</h3><p>게시물 기획, 디자인, 문구 작성, 업로드 일정을 관리하고 기존 계정도 함께 확인합니다.</p></article>
+            <article><span>03</span><h3>Meta 광고 운영</h3><p>Instagram과 Facebook 광고를 세팅하고 목적과 지역, 고객에 맞춰 대상을 설정합니다.</p></article>
+            <article><span>04</span><h3>광고 결과 분석</h3><p>노출과 클릭, 문의 결과를 정리하고 반응에 따라 소재와 대상을 조정합니다.</p></article>
+            <article><span>05</span><h3>커뮤니티·인플루언서</h3><p>관련 온라인 커뮤니티, 체험단, 인플루언서를 찾아 홍보와 섭외를 진행합니다.</p></article>
+            <article><span>06</span><h3>언론기사·홈페이지</h3><p>업체 소개와 행사 소식을 알리는 기사, 홈페이지 또는 랜딩페이지를 제작합니다.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section price" id="price">
+        <div class="section-heading reveal">
+          <p class="section-index">03 / PRICE</p>
+          <div><h2>필요한 업무부터 먼저 시작하세요.</h2><p>처음부터 여러 서비스를 한꺼번에 신청하지 않아도 됩니다.<br>필요한 채널과 업무를 확인한 뒤 하나씩 추가할 수 있습니다.</p></div>
+        </div>
+
+        <div class="price-switch" role="tablist" aria-label="가격 지역 선택" data-tab-group="price">
+          <button class="price-tab is-active" type="button" role="tab" aria-selected="true" data-tab="korea">KOREA <small>한국</small></button>
+          <button class="price-tab" type="button" role="tab" aria-selected="false" data-tab="philippines">PHILIPPINES <small>필리핀</small></button>
+        </div>
+
+        <div class="price-panel is-active" role="tabpanel" data-panel-group="price" data-panel="korea">
+          <p class="price-note">한국 서비스는 업종, 채널, 콘텐츠 수량과 광고 기간에 따라 업무 범위가 달라집니다.<br>필요한 항목을 확인한 뒤 견적을 안내드립니다.</p>
+          <div class="price-grid korea-price-grid">
+            <article class="price-card"><p class="price-label">NAVER</p><h3>네이버 마케팅</h3><strong>상담 후 견적</strong><p>검색부터 방문과 후기까지 필요한 항목을 선택해 구성합니다.</p><ul><li>플레이스 관리</li><li>체험단·맘카페 섭외</li><li>GFA·검색광고</li><li>리뷰 관리</li></ul><a href="#contact">상담하기 <span>→</span></a></article>
+            <article class="price-card"><p class="price-label">SOCIAL</p><h3>Meta·Instagram</h3><strong>상담 후 견적</strong><p>콘텐츠 제작과 채널 관리, 광고 운영을 필요한 범위로 구성합니다.</p><ul><li>인스타그램 운영</li><li>릴스 제작</li><li>Meta 광고 세팅</li><li>광고 결과 확인</li></ul><a href="#contact">상담하기 <span>→</span></a></article>
+            <article class="price-card accent-blue"><p class="price-label">VIDEO</p><h3>YouTube</h3><strong>상담 후 견적</strong><p>전문 PD 파트너와 협업해 영상과 채널 업무를 진행합니다.</p><ul><li>YouTube 광고</li><li>채널 운영</li><li>영상 기획</li><li>촬영·편집</li></ul><a href="#contact">상담하기 <span>→</span></a></article>
+            <article class="price-card"><p class="price-label">CAMPAIGN</p><h3>행사·통합 마케팅</h3><strong>상담 후 견적</strong><p>행사와 브랜드에 맞춰 여러 채널의 업무를 함께 구성합니다.</p><ul><li>온라인 홍보 기획</li><li>SNS 운영</li><li>커뮤니티 섭외</li><li>광고소재 제작</li></ul><a href="#contact">상담하기 <span>→</span></a></article>
+          </div>
+        </div>
+
+        <div class="price-panel" role="tabpanel" data-panel-group="price" data-panel="philippines" hidden>
+          <div class="price-grid philippines-price-grid">
+            <article class="price-card"><p class="price-label">STARTER</p><h3>Meta 광고 테스트</h3><strong>₱5,900 <small>/ 1회</small></strong><p>광고를 처음 진행하거나 짧게 반응을 확인하고 싶은 업체를 위한 상품입니다.</p><ul><li>광고소재 2종</li><li>광고 문구 작성</li><li>Meta 캠페인 1개</li><li>14일 광고 관리</li><li>간단 결과보고</li></ul><small class="fine-print">광고비 별도 · 권장 광고비 ₱3,000 이상</small></article>
+            <article class="price-card"><p class="price-label">BASIC</p><h3>월간 베이직</h3><strong>₱12,900 <small>/ 월</small></strong><p>한 달에 필요한 기본 콘텐츠와 광고를 함께 관리합니다.</p><ul><li>월 콘텐츠 4건</li><li>광고소재 포함</li><li>Instagram·Facebook 동시 게시</li><li>Meta 캠페인 1개</li><li>월간 기본 결과보고</li><li>수정 1회</li></ul><small class="fine-print">광고비 별도 · 사진과 영상은 업체 제공</small></article>
+            <article class="price-card accent-blue"><p class="recommend">RECOMMENDED</p><p class="price-label">GROWTH</p><h3>월간 그로스</h3><strong>₱24,900 <small>/ 월</small></strong><p>콘텐츠와 광고를 꾸준히 운영하고 결과를 비교하고 싶은 업체를 위한 상품입니다.</p><ul><li>월 콘텐츠 8건</li><li>광고소재 2종 이상</li><li>간단 릴스 편집</li><li>Meta 캠페인 최대 2개</li><li>광고소재별 결과 비교</li><li>월 1회 온라인 미팅</li></ul><small class="fine-print">광고비·현지 촬영비 별도</small></article>
+            <article class="price-card"><p class="price-label">CUSTOM</p><h3>통합 운영</h3><strong>₱39,900부터 <small>/ 월</small></strong><p>콘텐츠, 광고, 커뮤니티, 인플루언서, 언론홍보 등을 상황에 맞춰 구성합니다.</p><ul><li>필요한 업무 확인</li><li>업체별 운영 범위 구성</li><li>별도 견적 안내</li></ul><small class="fine-print">광고비·인플루언서·게재비·송출비·촬영비 별도</small></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-dark process" id="process">
+        <div class="section-heading light reveal"><p class="section-index">04 / PROCESS</p><div><h2>업무는 이렇게 진행합니다.</h2></div></div>
+        <div class="process-grid reveal">
+          <article><span>01</span><h3>상담 신청</h3><p>현재 운영 중인 업체와 필요한 업무를 알려주세요.</p></article>
+          <article><span>02</span><h3>계정 확인</h3><p>네이버, Instagram, Facebook, 홈페이지 등 운영 중인 채널을 확인합니다.</p></article>
+          <article><span>03</span><h3>업무와 비용 안내</h3><p>필요한 업무, 제작 수량, 광고 기간과 비용을 정리해 안내드립니다.</p></article>
+          <article><span>04</span><h3>콘텐츠 확인</h3><p>제작한 콘텐츠와 광고소재를 먼저 보내드리고 확인을 받습니다.</p></article>
+          <article><span>05</span><h3>게시물과 광고 운영</h3><p>확인된 콘텐츠를 게시하고 광고를 운영합니다.</p></article>
+          <article><span>06</span><h3>결과 전달</h3><p>운영 결과를 정리하고 다음에 필요한 업무를 안내드립니다.</p></article>
+        </div>
+      </section>
+
+      <section class="section selected-experience">
+        <p class="section-index reveal">05 / SELECTED EXPERIENCE</p>
+        <h2 class="reveal">혜옴 설립 전에도 다양한 행사와 브랜드의 온라인 마케팅을 진행했습니다.</h2>
+        <p class="selected-intro reveal">행사 온라인 마케팅, 게스트 및 인플루언서 섭외, SNS와 광고 운영을 담당했습니다.</p>
+        <p class="disclaimer reveal">위 프로젝트는 혜옴 설립 전 주요 구성원의 수행 경험입니다.</p>
+        <ol class="experience-list reveal"><li><span>01</span><strong>Try Everything</strong><em>ONLINE MARKETING</em></li><li><span>02</span><strong>경기스타트업서밋</strong><em>ONLINE MARKETING</em></li><li><span>03</span><strong>DDP 디자인페어</strong><em>ONLINE MARKETING</em></li></ol>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-mark reveal">H</div>
+        <div class="about-copy reveal"><p class="section-index">06 / ABOUT HYEOM</p><h2>혜옴 소개</h2><p>혜옴은 한국의 소상공인·행사·브랜드와 필리핀 현지 사업자를 위한 온라인 마케팅을 진행하는 광고대행사입니다.</p><p>규모가 작은 업체도 필요한 업무부터 맡길 수 있도록 콘텐츠 제작, SNS 운영, 광고, 온라인 홍보 업무를 나눠서 제공합니다.</p><p>정해진 상품 외에도 업종과 현재 운영 상황에 맞춰 필요한 업무만 별도로 진행할 수 있습니다.</p></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-intro reveal"><p class="section-index">07 / CONTACT</p><h2>현재 운영 중인 업체와 필요한 업무를 알려주세요.</h2><p>무엇을 맡겨야 할지 아직 정하지 못하셨다면 지금 가장 불편한 점만 적어주셔도 됩니다.<br>확인한 뒤 진행할 수 있는 업무와 비용을 안내드립니다.</p><small>확인 후 카카오톡, 전화 또는 이메일로 연락드립니다.</small><a class="button contact-download" href="./assets/hyeom-company-profile.pdf" download="혜옴 회사 소개서.pdf">회사소개서 PDF 다운로드 <span>↓</span></a></div>
+        <form class="contact-form reveal" id="contact-form">
+          <label>업체명<input type="text" name="company" placeholder="업체명을 입력해주세요" /></label>
+          <label>업종<input type="text" name="industry" placeholder="예: 음식점, 행사, 뷰티" /></label>
+          <label class="full">현재 운영 중인 SNS 또는 홈페이지<input type="url" name="website" placeholder="주소를 입력해주세요" /></label>
+          <label>필요한 시장<select name="market"><option value="">선택해주세요</option><option>한국</option><option>필리핀</option><option>한국·필리핀 모두</option><option>잘 모르겠습니다</option></select></label>
+          <label>필요한 업무<select name="service"><option value="">선택해주세요</option><option>네이버 마케팅</option><option>Instagram·Meta</option><option>YouTube</option><option>온라인 홍보</option><option>통합 운영</option><option>잘 모르겠습니다</option></select></label>
+          <label class="full">연락처 또는 카카오톡 ID<input type="text" name="contact" placeholder="연락 가능한 정보를 입력해주세요" /></label>
+          <label class="full">문의 내용<textarea name="message" rows="5" placeholder="필요한 업무와 현재 고민을 자유롭게 적어주세요"></textarea></label>
+          <button class="submit-button" type="submit">상담 신청하기 <span>→</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top"><a class="footer-brand" href="#top">HYEOM<span>.</span></a><p>한국과 필리핀을 잇는 마케팅</p></div>
+      <div class="footer-bottom"><div><p>상호: 혜옴</p><p>대표: 이인혜</p><p>사업자등록번호: 757-01-03342</p><p>주소: 서울특별시 강남구 강남대로 546, 지하 1층 G105호</p></div><nav aria-label="외부 링크"><a href="#contact">Instagram</a><a href="#contact">KakaoTalk</a><a href="#contact">Email</a></nav></div>
+      <div class="footer-legal"><span>© 2026 HYEOM. All rights reserved.</span><a href="#top">BACK TO TOP ↑</a></div>
+    </footer>
+
+    <dialog class="case-modal" id="case-modal" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="상세 내용 닫기">×</button>
+      <p class="modal-index">SELECTED WORK</p><h2 id="modal-title"></h2><p id="modal-description"></p><div id="modal-list"></div>
+    </dialog>
+  </body>
+</html>
